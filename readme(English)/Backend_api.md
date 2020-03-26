@@ -1,11 +1,16 @@
 # EPCC7 Job API Interface Document
 
 ## API V1 interface description
--Background interface base address: `http: // localhost: 8888 / api / private / v1 /`
+-Background interface base address: `http://localhost:8888/api/private/v1/`
+
 -Backend server has turned on CORS cross-domain support
+
 -Back-end API V1 authentication uses Token authentication uniformly
+
 -Authorization API is required in the background. You must use the Authorization field in the request header to provide a token.
+
 -Use HTTP Status Code to identify status
+
 -Uniform data return format using JSON
 
 ### Supported Request Methods
