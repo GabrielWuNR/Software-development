@@ -16,11 +16,17 @@
 ### Supported Request Methods
 
 -GET (SELECT): Get the resource (one or more) from the server.
+
 -POST (CREATE): Create a new resource on the server.
+
 -PUT (UPDATE): Update the resource on the server (the client provides the complete resource after the change).
+
 -PATCH (UPDATE): Update the resource on the server (the client provides changed attributes).
+
 -DELETE (DELETE): delete resources from the server.
+
 -HEAD: Get the metadata of the resource.
+
 -OPTIONS: Get information about which attributes of the resource can be changed by the client.
 
 ### General return status description
