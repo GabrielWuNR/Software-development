@@ -178,7 +178,7 @@ Parameter name | Parameter description | Remarks |
 ```
 ### Modify user status
 
-* Request path: users /: id / state /: state
+* Request path:users/:id/state/:state
 * Request method: put
 * Request parameters
 
@@ -208,7 +208,7 @@ state | user state | cannot be empty `carried in url`, value is true or false |
 ```
 ### Query user information by ID
 
-* Request path: users /: id
+* Request path: users/:id
 * Request method: get
 * Request parameters
 
@@ -245,7 +245,7 @@ Parameter name | Parameter description | Remarks |
 ```
 ### Edit user submission
 
-* Request path: users /: id
+* Request path: users/:id
 * Request method: put
 * Request parameters
 
@@ -308,7 +308,7 @@ Parameter name | Parameter description | Remarks |
 ```
 ### Assigning user roles
 
-* Request path: users /: id / role
+* Request path: users/:id/role
 * Request method: put
 * Request parameters
 
@@ -347,7 +347,7 @@ Parameter name | Parameter description | Remarks |
 
 ### All permissions list
 
-* Request path: rights /: type
+* Request path: rights/:type
 * Request method: get
 * Request parameters
 
@@ -541,7 +541,7 @@ Parameter name | Parameter description | Remarks |
 ```
 ### Querying Roles by ID
 
-* Request path: roles /: id
+* Request path: roles/:id
 * Request method: get
 * Request parameters
 
@@ -573,7 +573,7 @@ Parameter name | Parameter description | Remarks |
 ```
 ### Edit Submit Role
 
-* Request path: roles /: id
+* Request path: roles/:id
 * Request method: put
 * Request parameters
 
@@ -599,7 +599,7 @@ roleName | role name | cannot be empty |
 ```
 ### Delete role
 
-* Request path: roles /: id
+* Request path: roles/:id
 * Request method: delete
 * Request parameters
 
@@ -620,7 +620,7 @@ Parameter name | Parameter description | Remarks |
 ```
 ### Role authorization
 
-* Request path: roles /: roleId / rights
+* Request path: roles/:roleId /rights
 * Request method: post
 * Request parameters
 
@@ -643,7 +643,7 @@ rids | permission ID list | permission ID list separated by `,` |
 
 ### Remove role-specific permissions
 
-* Request path: roles /: roleId / rights /: rightId
+* Request path: roles/:roleId/rights/:rightId
 * Request method: delete
 * Request parameters
 
@@ -774,7 +774,7 @@ Parameter name | Parameter description | Remarks |
 ```
 ### Query community details by id
 
-* Request path: communities /: id
+* Request path: communities/:id
 * Request method: get
 * Request parameters
 
@@ -803,14 +803,14 @@ Parameter name | Parameter description | Remarks |
 ```
 ### Edit Submit Community Information
 
-* Request path: communities /: id
+* Request path: communities/:id
 * Request method: put
 * Request parameters
 
- 
+
 Parameter name | Parameter description | Remarks |
 | --------- | --------- | -------- |
-|: id | Community ID | Cannot be empty `carry in url` |
+|id | Community ID | Cannot be empty `carry in url` |
 | C_name | Community Name | Cannot be empty |
 |G_id | Game ID | Cannot be empty |
 |Update_time | Update time | Can't be empty |
@@ -839,7 +839,7 @@ Parameter name | Parameter description | Remarks |
 ```
 ### Delete community
 
-* Request path: communities /: id
+* Request path: communities/:id
 * Request method: delete
 * Request parameters
 
@@ -945,7 +945,7 @@ Parameter name | Parameter description | Remarks |
 ```
 ### Query clubs details by id
 
-* Request path: clubs /: id
+* Request path: clubs/:id
 * Request method: get
 * Request parameters
 
@@ -974,7 +974,7 @@ Parameter name | Parameter description | Remarks |
 ```
 ### Edit submit clubs information
 
-* Request path: clubs /: id
+* Request path: clubs/:id
 * Request method: put
 * Request parameters
 
@@ -1008,7 +1008,7 @@ Parameter name | Parameter description | Remarks |
 ```
 ### remove clubs
 
-* Request path: clubs /: id
+* Request path: clubs/:id
 * Request method: delete
 * Request parameters
 
@@ -1033,7 +1033,7 @@ Parameter name | Parameter description | Remarks |
 
 ### parameter list
 
-* Request path: GameTypes /: id / types
+* Request path: GameTypes/:id/types
 * Request method: get
 * Request parameters
 
@@ -1069,7 +1069,7 @@ Parameter name | Parameter description | Remarks |
 ```
 ### Add new game category information
 
-* Request path: GameTypes / types
+* Request path: GameTypes/types
 * Request method: post
 * Request parameters
 
@@ -1095,7 +1095,7 @@ Parameter name | Parameter description | Remarks |
 ```
 ### Delete parameter
 
-* Request path: GameTypes /: id / types
+* Request path: GameTypes/:id/types
 * Request method: delete
 * Request parameters
 
