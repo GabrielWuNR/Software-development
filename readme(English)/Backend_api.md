@@ -812,9 +812,11 @@ Parameter name | Parameter description | Remarks |
 | --------- | --------- | -------- |
 |: id | Community ID | Cannot be empty `carry in url` |
 | C_name | Community Name | Cannot be empty |
-G_id | Game ID | Cannot be empty |
-Update_time | Update time | Can't be empty |
-Description | Introduction | Can be empty |
+|G_id | Game ID | Cannot be empty |
+|Update_time | Update time | Can't be empty |
+|Description | Introduction | Can be empty |
+
+
 * Response data
 
 ```javascript
@@ -858,7 +860,7 @@ Parameter name | Parameter description | Remarks |
 ```
 
 
-# clubManagement
+# club Management
 
 ### club list
 
@@ -867,10 +869,10 @@ Parameter name | Parameter description | Remarks |
 * Request parameters
 
 Parameter name | Parameter description | Remarks |
-| ------ | -------- | --------------------------------- ----------- |
-pagenum | current page number | cannot be empty |
-pagesize | number of pages | cannot be empty |
-pagesize
+| ------ | -------- | ---------------------------------------- |
+|pagenum | current page number | cannot be empty |
+|pagesize | number of pages | cannot be empty |
+ 
 
 * Response parameters
 
@@ -879,12 +881,11 @@ Parameter name | Parameter description | Remarks |
 | total | Total records | |
 | C_id | club ID | |
 | C_name | club name | |
-G_id | Game ID | |
+|G_id | Game ID | |
 | Found_time | Founded time | |
-Update_time | Update time | |
-Description | Introduction | |
- 
-
+|Update_time | Update time | |
+|Description | Introduction | |
+ 
 
 * Response data
 ```javascript
@@ -917,11 +918,11 @@ Description | Introduction | |
 
 Parameter name | Parameter description | Remarks |
 | --------- | --------- | -------- |
-C_name | club name | cannot be empty |
+|C_name | club name | cannot be empty |
 | Founder_id | Founder ID | Cannot be empty |
-Found_time | Create time | Can't be empty |
-Update_time | Update time | Can't be empty |
-Description | Introduction | Can be empty |
+|Found_time | Create time | Can't be empty |
+|Update_time | Update time | Can't be empty |
+|Description | Introduction | Can be empty |
 
 * Response data
 
@@ -977,14 +978,14 @@ Parameter name | Parameter description | Remarks |
 * Request method: put
 * Request parameters
 
- 
+
 Parameter name | Parameter description | Remarks |
 | --------- | --------- | -------- |
 |: id | Community ID | Cannot be empty `carry in url` |
 | C_name | Community Name | Cannot be empty |
 | Founder_id | Founder ID | Cannot be empty |
-Update_time | Update time | Can't be empty |
-Description | Introduction | Can be empty |
+|Update_time | Update time | Can't be empty |
+|Description | Introduction | Can be empty |
 * Response data
 
 ```javascript
@@ -1039,7 +1040,7 @@ Parameter name | Parameter description | Remarks |
 Parameter name | Parameter description | Remarks |
 | ------ | ----------- | ------------------------------------------------------- |
 |: id | Category ID | Cannot be empty `carry in url` |
- 
+ 
 
 * Response parameters
 
@@ -1147,7 +1148,7 @@ G_name | Game Name | |
 |age_limit | minimum age limit | |
 | official_web | Official URL | |
 
-* 响应数据
+* Response Data
 
 ```javascript
 {
@@ -1184,17 +1185,17 @@ G_name | Game Name | |
 * Request parameters
 
 Parameter name | Parameter description | Remarks |
-| --------------- | -------------------------- | ------ -|
+| --------------- | -------------------------- | -------|
 T_id | Game Category ID | Cannot be empty |
 | M_id | Vendor ID | Cannot be empty |
-G_name | Game Name | Cannot be empty |
+|G_name | Game Name | Cannot be empty |
 | G_price | Price | Cannot be empty |
-G_discription | Introduction | Can be empty |
+|G_discription | Introduction | Can be empty |
 | G_rating | Rating | Can't be empty |
 | Num_of_player | Number of participants | Cannot be empty |
-playing_time | game play time | cannot be empty |
-age_limit | minimum age limit | cannot be empty |
-official_web | official URL | cannot be empty |
+|playing_time | game play time | cannot be empty |
+|age_limit | minimum age limit | cannot be empty |
+|official_web | official URL | cannot be empty |
 
 * Response data
 
@@ -1225,7 +1226,7 @@ official_web | official URL | cannot be empty |
  
 ### Querying games by ID
 
-* Request path: games /: id
+* Request path: games/:id
 * Request method: get
 * Request parameters
 
@@ -1278,7 +1279,7 @@ Parameter name | Parameter description | Remarks |
 ```
 ### Edit Submit Game
 
-* Request path: games /: id
+* Request path: games/:id
 * Request method: put
 * Request parameters
 
@@ -1322,7 +1323,7 @@ Parameter name | Parameter description | Remarks |
 ```
 ### Delete game
 
-* Request path: games /: id
+* Request path: games/:id
 * Request method: delete
 * Request parameters
 
@@ -1343,7 +1344,7 @@ Parameter name | Parameter description | Remarks |
 ```
 ### Sync games pictures
 
-* Request path: games /: id / pics
+* Request path: games/:id/pics
 * Request method: put
 * Request parameters
 
@@ -1621,8 +1622,8 @@ Parameter name | Parameter description | Remarks |
 | -------------------- | --------------- | -------- |
 pagenum | current page number | cannot be empty |
 pagesize | number of pages per page | cannot be empty |
- | Selldetail_id | ID of the market record | can be empty |
- G_id | ID of the selling game | can be empty |
+| Selldetail_id | ID of the market record | can be empty |
+|G_id | ID of the selling game | can be empty |
 | U_id | Seller user ID | Can be empty |
 | website_url | Selling website | Can be empty |
 price | Price for the product | can be empty |
@@ -1630,7 +1631,7 @@ price | Price for the product | can be empty |
 location | product location | can be empty |
 | sending_areas | allowing sending areas | can be empty |
 | description | product discription | can be empty |
- 
+
 * Response data
 
 Parameter name | Parameter description | Remarks |
@@ -1682,7 +1683,7 @@ location | product location | |
 
 Parameter name | Parameter description | Remarks |
 | -------------------- | --------------- | -------- |
- | G_id | ID of the selling game | cannot be empty |
+| G_id | ID of the selling game | cannot be empty |
 | U_id | Seller user ID | Can be empty |
 | website_url | Selling website | cannot be empty |
 price | Price for the product | cannot be empty |
@@ -1690,7 +1691,7 @@ price | Price for the product | cannot be empty |
 location | product location | cannot be empty |
 sending_areas | allowing sending areas | cannot be empty |
 | description | product discription | can be empty |
- 
+
 * Response data
 
 Parameter name | Parameter description | Remarks |
@@ -1736,8 +1737,8 @@ location | product location | |
 * Request parameters
 
 Parameter name | Parameter description | Remarks |
-| ------------ | ------------ | ----------------------- ------------------- |
-  G_id | ID of the selling game | can be empty |
+| ------------ | ------------ | --------------------------------------- |
+| G_id | ID of the selling game | can be empty |
 | U_id | Seller user ID | Can be empty |
 | website_url | Selling website | Can be empty |
 price | Price for the product | can be empty |
@@ -1745,11 +1746,11 @@ price | Price for the product | can be empty |
 location | product location | can be empty |
 | sending_areas | allowing sending areas | can be empty |
 | description | product discription | can be empty |
- 
+ 
 
 * Request data description
 
-   * All request data is updated incrementally. If the parameter is not filled, this field will not be updated
+  * All request data is updated incrementally. If the parameter is not filled, this field will not be updated
 
 * Response data
 ```javascript
