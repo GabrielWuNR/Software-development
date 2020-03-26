@@ -183,7 +183,7 @@ Parameter name | Parameter description | Remarks |
 * Request parameters
 
 Parameter name | Parameter description | Remarks |
-| ------ | -------- | --------------------------------- ---------- |
+| ------ | -------- | ---------------------------------------- |
 id | user ID | cannot be empty `carry in url` |
 state | user state | cannot be empty `carried in url`, value is true or false |
 
@@ -435,7 +435,7 @@ type=tree
 * Request method: get
 * Response data
 
-`` `javascript
+```javascript
 {
      "data":
          {
@@ -468,7 +468,7 @@ type=tree
    * The second level starts with the description of permissions. There are 3 levels of permissions.
 * Response data
 
-`` `javascript
+```javascript
 {
      "data": [
          {
