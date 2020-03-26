@@ -1,8 +1,7 @@
 # EPCC7 作业 API 接口文档
 
 ## API V1 接口说明
-- 前台接口基准地址：`http://localhost:8888/api/Backend/v1/`
-- 后台接口基准地址：`http://localhost:8888/api/frontend/`
+- 后台接口基准地址：`http://localhost:8888/api/private/v1/`
 - 后端服务端已开启 CORS 跨域支持
 - 后端API V1 认证统一使用 Token 认证
 - 后台需要授权的 API ，必须在请求头中使用 `Authorization` 字段提供 `token` 令牌
