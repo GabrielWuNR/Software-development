@@ -177,7 +177,7 @@ p_introduction | Introduction | |
 ```javascript
 {
     "data": {
-        "total": 5,
+        "total": 4,
         "pagenum": 1,
         "communityposts": [
             {
@@ -412,7 +412,7 @@ p_introduction | Introduction | |
 ```javascript
 {
     "data": {
-        "total":3,
+        "total": 2,
         "pagenum": 1,
         "clubposts": [
             {
